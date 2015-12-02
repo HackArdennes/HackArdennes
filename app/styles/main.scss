@@ -29,8 +29,19 @@ $icon-font-path: '../fonts/';
   right: 0;
 }
 
+#terms {
+  bottom: $grid-gutter-width/2;
+  font-size: $font-size-small;
+  opacity: .15;
+}
 
-
+@media(min-width:$screen-xs-max) {
+  #terms {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+}
 
 
 // Grayscale
@@ -238,12 +249,13 @@ a {
 .btn-circle {
   width: 70px;
   height: 70px;
-  margin-top: 15px;
+  margin: 15px 5px;
   padding: 7px 16px;
-  border: 2px solid $grayscale-light;
+  border: 2px solid $grayscale-primary;
   border-radius: 35px;
-  font-size: 40px;
-  color: $grayscale-light;
+  font-size: 30px;
+  line-height: 52px;
+  color: $grayscale-primary;
   background: transparent;
   -webkit-transition: background .3s ease-in-out;
   -moz-transition: background .3s ease-in-out;

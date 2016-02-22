@@ -1,6 +1,12 @@
 $fa-font-path: '../fonts/';
 $icon-font-path: '../fonts/';
 
+$green1: #4dc6b4;
+
+$brand-success: $green1;
+$brand-primary: #f7e961;
+$btn-primary-color: #000000;
+
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "bower_components/font-awesome/scss/font-awesome.scss";
@@ -77,7 +83,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin: 0 0 35px;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-family: $grayscale-headline-font-family;
   font-weight: 700;
   letter-spacing: 1px;
@@ -100,7 +106,7 @@ p {
 }
 
 a {
-  color: $grayscale-primary;
+  color: $green1;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
@@ -227,7 +233,7 @@ a {
   }
 }
 
-#about {
+#about, #gain {
   background-color: white;
   color: $text-color;
 }
@@ -313,7 +319,7 @@ a {
 }
 
 .btn {
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 400;
   -webkit-transition: all .3s ease-in-out;

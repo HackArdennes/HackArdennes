@@ -27,6 +27,7 @@ $(function() {
 
     $('#intro-player').YTPlayer();
 
+    L.Icon.Default.imagePath = '/images';
     var map = L.map('map', {
         center: [49.701628, 4.948978],
         zoom: 13,

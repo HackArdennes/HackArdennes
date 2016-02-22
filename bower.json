@@ -30,7 +30,8 @@
     },
     "jquery.mb.ytplayer": {
       "main": [
-        "dist/jquery.mb.YTPlayer.js"
+        "dist/jquery.mb.YTPlayer.js",
+        "dist/css/jquery.mb.YTPlayer.min.css"
       ]
     }
   },

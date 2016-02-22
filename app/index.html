@@ -11,6 +11,7 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/jquery.mb.ytplayer/dist/css/jquery.mb.YTPlayer.min.css" />
     <link rel="stylesheet" href="/bower_components/leaflet/dist/leaflet.css" />
     <!-- endbower -->
     <!-- endbuild -->
@@ -51,19 +52,22 @@
               <a href="#page-top"></a>
             </li>
             <li>
-              <a class="page-scroll" href="#about">Présentation</a>
+              <a class="page-scroll" href="#about">Yauque!</a>
             </li>
             <li>
-              <a class="page-scroll" href="#gain">Récompenses</a>
+              <a class="page-scroll" href="#planning">Programme</a>
             </li>
             <li>
+              <a class="page-scroll" href="#gain">Gains</a>
+            </li>
+<!--             <li>
               <a class="page-scroll" href="#planning">Mentors & Jury</a>
-            </li>
+            </li> -->
             <li>
               <a class="page-scroll" href="#partner">Partenaires</a>
             </li>
             <li>
-              <a class="page-scroll" href="#contact">Contact / Presse</a>
+              <a class="page-scroll" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -78,16 +82,14 @@
 
 
     <!-- Intro Header -->
-    <header class="intro" data-property="{videoURL:'_JC1MAR3A9g',containment:'self',startAt:17,showControls:false,mute:true,autoPlay:true,loop:true,opacity:.25}">
+    <header>
       <div class="intro-body">
+        <div id="intro-player" data-property="{videoURL:'_JC1MAR3A9g',containment:'body',startAt:17,showControls:false,mute:true,autoPlay:true,loop:true,opacity:.25}"></div>
         <div class="container">
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
               <h1 class="brand-heading"><img alt="HackArdennes" src="/images/logo_hackardennes_intro.png" width="400" height="159" id="intro-logo"></h1>
               <p class="intro-text">1<sup>er</sup> hackathon ardennais dans le plus grand château fort d'Europe<br /><em>22-24 AVRIL 2016 - SEDAN</em></p>
-<!--               <a href="#about" class="btn btn-circle page-scroll">
-                <i class="fa fa-angle-double-down animated"></i>
-              </a> -->
               <div class="row">
                 <div class="col-md-3 col-md-offset-3">
                   <a href="https://www.weezevent.com/hackardennes" class="btn btn-primary btn-lg btn-block">Je m'inscris !</a>
@@ -105,7 +107,7 @@
 
     <!-- About Section -->
     <section id="about">
-      <div class="container content-section text-center">
+      <div class="container text-center">
         <div class="row">
           <div class="col-lg-10 col-lg-offset-1">
             <h2>Un Akaquoi ?</h2>
@@ -123,7 +125,7 @@
           </div>
 
           <div class="col-md-4 col-md-offset-4">
-            <p>
+            <p class="p-cta">
               <a href="https://www.weezevent.com/hackardennes" class="btn btn-primary btn-lg btn-block">Je suis un chevalier 2.0 !</a>
             </p>
           </div>
@@ -133,7 +135,7 @@
 
 
     <!-- Planning section -->
-    <section id="planning" class="container content-section text-center">
+    <section id="planning" class="container text-center">
       <div class="planning-section">
 
         <div class="col-lg-10 col-lg-offset-1">
@@ -339,7 +341,7 @@
 
         </div>
         <div class="col-lg-4 col-lg-offset-4">
-          <p>
+          <p class="p-cta">
             <a href="https://www.weezevent.com/hackardennes" class="btn btn-primary btn-lg btn-block">A moi la cacasse à cul nul !</a>
           </p>
         </div>
@@ -349,7 +351,7 @@
 
     <!-- About Section -->
     <section id="gain">
-      <div class="container content-section text-center">
+      <div class="container text-center">
         <div class="row">
           <div class="col-lg-10 col-lg-offset-1">
             <h2>3 équipes récompensées !</h2>
@@ -377,7 +379,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-lg-offset-4">
-            <p>
+            <p class="p-cta">
               <a href="https://www.weezevent.com/hackardennes" class="btn btn-primary btn-lg btn-block">Sonnez trompettes !</a>
             </p>
           </div>
@@ -387,7 +389,7 @@
 
 
     <!-- partner section -->
-    <section id="partner" class="container content-section text-center">
+    <section id="partner" class="container text-center">
       <h2>Nos Partenaires</h2>
       <div class="row">
         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
@@ -416,6 +418,11 @@
           </a>
         </div>
         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <a class="thumbnail" href="http://www.alicegraphiste.fr/">
+            <img class="img-responsive" src="/images/partners/alice_graphiste.png" alt="Alice Graphiste - Un nouveau regard sur votre communication">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
           <a class="thumbnail" href="http://www.paloardo.fr/">
             <img class="img-responsive" src="/images/partners/paloardo.png" alt="Palo Ardo - Coworking à Charleville-Mézières">
           </a>
@@ -435,29 +442,36 @@
 
 
     <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-      <h2>Contacter HackArdennes</h2>
-      <p>Une question, une proposition, de l'aide ? Contactez-nous !</p>
-      <p><a href="mailto:contact@hackardennes.com">contact@hackardennes.com</a></p>
-      <ul class="list-inline banner-social-buttons">
-        <li>
-          <a href="https://twitter.com/hackardennes" class="btn btn-default btn-lg"><i class="fa fa-twitter-square fa-fw"></i> <span class="network-name">Twitter</span></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/company/hackardennes" class="btn btn-default btn-lg"><i class="fa fa-linkedin-square fa-fw"></i> <span class="network-name">Linkedin</span></a>
-        </li>
-        <li>
-          <a href="https://plus.google.com/106653754918208714625" class="btn btn-default btn-lg"><i class="fa fa-google-plus-square fa-fw"></i> <span class="network-name">Google+</span></a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/hackardennes" class="btn btn-default btn-lg"><i class="fa fa-facebook-square fa-fw"></i> <span class="network-name">Facebook</span></a>
-        </li>
-      </ul>
-      <p>&nbsp;</p>
+    <section id="contact">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+            <h2>Contacter HackArdennes</h2>
+            <p>Une question, une proposition, de l'aide ? Contactez-nous !</p>
+            <p><a href="mailto:contact@hackardennes.com">contact@hackardennes.com</a></p>
+            <div class="row">
+              <div class="col-md-3">
+                <a href="https://twitter.com/hackardennes" class="btn btn-default btn-lg btn-block"><i class="fa fa-twitter-square fa-fw"></i> <span class="network-name">Twitter</span></a>
+              </div>
+              <div class="col-md-3">
+                <a href="https://www.linkedin.com/company/hackardennes" class="btn btn-default btn-lg btn-block"><i class="fa fa-linkedin-square fa-fw"></i> <span class="network-name">Linkedin</span></a>
+              </div>
+              <div class="col-md-3">
+                <a href="https://plus.google.com/106653754918208714625" class="btn btn-default btn-lg btn-block"><i class="fa fa-google-plus-square fa-fw"></i> <span class="network-name">Google+</span></a>
+              </div>
+              <div class="col-md-3">
+                <a href="https://www.facebook.com/hackardennes" class="btn btn-default btn-lg btn-block"><i class="fa fa-facebook-square fa-fw"></i> <span class="network-name">Facebook</span></a>
+              </div>
+            </div>
 
-      <h2>Presse</h2>
-      <p>Envie de parler de <a href="https://twitter.com/hashtag/HackArdennes">#HackArdennes</a> ?</p>
-      <p><a href="https://www.facebook.com/hackardennes" class="btn btn-default btn-lg"><i class="fa fa-download fa-fw"></i> Télécharger dossier presse</a></p>
+            <h2>Presse</h2>
+            <p>Envie de parler du <a href="https://twitter.com/hashtag/HackArdennes">#HackArdennes</a> ?</p>
+          </div>
+          <div class="col-md-4 col-md-offset-4">
+            <a href="https://www.facebook.com/hackardennes" class="btn btn-default btn-lg btn-block"><i class="fa fa-download fa-fw"></i> Dossier presse</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Map Section -->
@@ -465,9 +479,7 @@
 
     <!-- Footer -->
     <footer>
-      <div class="container text-center">
-        <p>Association @HackArdennes, <a href="http://www.isics.fr/">Hébergement Isics</a></p>
-      </div>
+      Association HackArdennes 29 avenue d'Arches 08000 Charleville-Mézières, <a href="http://www.isics.fr/">Hébergement Isics</a>
     </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

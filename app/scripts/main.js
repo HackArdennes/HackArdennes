@@ -25,7 +25,7 @@ $(function() {
         event.preventDefault();
     });
 
-    $('.intro').YTPlayer();
+    $('#intro-player').YTPlayer();
 
     var map = L.map('map', {
         center: [49.701628, 4.948978],

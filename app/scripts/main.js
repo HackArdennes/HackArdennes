@@ -25,7 +25,11 @@ $(function() {
         event.preventDefault();
     });
 
-    $('#intro-player').YTPlayer();
+    $('#intro-player')
+        .YTPlayer()
+        .on('YTPStart', function() {
+            $('body').css('background-image', 'none');
+        });
 
     L.Icon.Default.imagePath = '/images';
     var map = L.map('map', {

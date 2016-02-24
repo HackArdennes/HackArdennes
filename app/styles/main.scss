@@ -75,6 +75,7 @@ body {
   font-family: $grayscale-body-font-family;
   color: $grayscale-light;
   background: $grayscale-dark url(../images/default_background.jpg);
+  background-attachment: fixed;
   background-size: cover;
   -webkit-tap-highlight-color: transparentize($grayscale-light, 0.8);
 }

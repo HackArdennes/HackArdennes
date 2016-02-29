@@ -11,6 +11,7 @@
         content: " ";
         width: 3px;
         background-color: #eeeeee;
+        //background-color: #f5e230;
         left: 50%;
         margin-left: -1.5px;
     }
@@ -131,6 +132,35 @@
 .timeline-badge.info {
     background-color: #5bc0de !important;
 }
+
+.timeline-badge.green1 {
+    background-color: #6dffcc !important;
+}
+
+.timeline-badge.green2 {
+    background-color: #00f793 !important;
+}
+
+.timeline-badge.green3 {
+    background-color: #00ad93 !important;
+}
+
+.timeline-badge.yellow1 {
+    background-color: #ffe24e !important;
+}
+
+.timeline-badge.yellow2 {
+    background-color: #f8ec69 !important;
+}
+
+.timeline-badge.yellow3 {
+    background-color: #efd500 !important;
+}
+
+.timeline-badge.yellow4 {
+    background-color: #efd500 !important;
+}
+
 
 .timeline-title {
     margin-top: 0;

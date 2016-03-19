@@ -328,11 +328,13 @@ ul.banner-social-buttons {
   margin-top: 0;
 }
 
-@media(max-width:$screen-md-max) {
+@media(max-width:$screen-lg-min+149) {
   #ribbon-register {
     display: none;
   }
+}
 
+@media(max-width:$screen-md-max) {
   ul.banner-social-buttons {
     margin-top: 15px;
   }

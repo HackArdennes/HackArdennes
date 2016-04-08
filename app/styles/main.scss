@@ -86,7 +86,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  // margin: 0 0 35px;
+  margin: 0 0 35px;
   // text-transform: uppercase;
   font-family: $grayscale-headline-font-family;
   font-weight: 700;
@@ -248,6 +248,16 @@ section {
 #about, #gain, #contact {
   background-color: white;
   color: $text-color;
+}
+
+#bonus {
+  padding: $grid-gutter-width;
+
+  p.text-muted {
+    font-size: $font-size-base;
+    margin-bottom: 0;
+    text-align: justify;
+  }
 }
 
 @media(min-width:$screen-xs-max) {

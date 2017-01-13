@@ -74,9 +74,9 @@ body {
   height: 100%;
   font-family: $grayscale-body-font-family;
   color: $grayscale-light;
-  background: $grayscale-dark url(../images/default_background.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, 1)), url(../images/default_background.jpg);
   background-attachment: fixed;
-  background-size: cover;
+  background-size: auto, cover;
   -webkit-tap-highlight-color: transparentize($grayscale-light, 0.8);
 }
 

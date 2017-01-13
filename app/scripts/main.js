@@ -25,16 +25,16 @@ $(function() {
         event.preventDefault();
     });
 
-    $('#intro-player')
-        .YTPlayer()
-        .on('YTPStart', function() {
-            $('body').css('background-image', 'none');
-        });
+    // $('#intro-player')
+    //     .YTPlayer()
+    //     .on('YTPStart', function() {
+    //         $('body').css('background-image', 'none');
+    //     });
 
     L.Icon.Default.imagePath = '/images';
     var map = L.map('map', {
-        center: [49.701628, 4.948978],
-        zoom: 13,
+        center: [49.76422, 4.70963],
+        zoom: 15,
         scrollWheelZoom: false
     });
 
@@ -42,8 +42,9 @@ $(function() {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    L.marker([49.701628, 4.948978]).addTo(map)
-        .bindPopup('<strong>HackArdennes</strong><br>Château Fort de Sedan<br>Cour du Château<br>08200 Sedan - France')
+    L.marker([49.76422, 4.70963]).addTo(map)
+        .bindPopup('<a href="https://twitter.com/HackArdennes">#StayTuned</a>')
+        // .bindPopup('<strong>HackArdennes</strong><br>Château Fort de Sedan<br>Cour du Château<br>08200 Sedan - France')
         .openPopup();
 });
 

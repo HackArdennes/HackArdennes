@@ -44,7 +44,6 @@ $(function() {
 
     L.marker([49.76422, 4.70963]).addTo(map)
         .bindPopup('<a href="https://twitter.com/HackArdennes">#StayTuned</a>')
-        // .bindPopup('<strong>HackArdennes</strong><br>Château Fort de Sedan<br>Cour du Château<br>08200 Sedan - France')
         .openPopup();
 });
 

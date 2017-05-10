@@ -31,6 +31,6 @@ $(function() {
     }).addTo(map);
 
     L.marker([49.76422, 4.70963]).addTo(map)
-        .bindPopup('<a href="https://twitter.com/HackArdennes">#StayTuned</a>')
+        .bindPopup('<a href="https://twitter.com/HackArdennes">#HackCV17</a>')
         .openPopup();
 });

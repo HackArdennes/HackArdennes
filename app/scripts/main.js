@@ -19,7 +19,7 @@ $(function() {
         event.preventDefault();
     });
 
-    L.Icon.Default.imagePath = '/images';
+    //L.Icon.Default.imagePath = '/images';
     var map = L.map('map', {
         center: [49.76422, 4.70963],
         zoom: 15,

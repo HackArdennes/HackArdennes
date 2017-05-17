@@ -20,6 +20,14 @@ $(function() {
     });
 
     //L.Icon.Default.imagePath = '/images';
+
+    var islandIcon = L.icon({
+        iconUrl: '/images/marker-iconx2.png',
+        iconSize: [80, 80],
+        //iconAnchor: [22, 94],
+        popupAnchor: [0, -40]
+    });
+
     var map = L.map('map', {
         center: [49.76422, 4.70963],
         zoom: 15,
@@ -30,7 +38,7 @@ $(function() {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    L.marker([49.76422, 4.70963]).addTo(map)
+    L.marker([49.76422, 4.70963], {icon: islandIcon}).addTo(map)
         .bindPopup('<a href="https://twitter.com/HackArdennes">#HackCV17</a>')
         .openPopup();
 });
